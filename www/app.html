@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialicons.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="animsition/css/animsition.min.css">
+    <title>App</title>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBfU8XlPO4oTWF5PRLUEzxNLx2I8yrIVL0",
+        authDomain: "gestiondeclientes-67d4d.firebaseapp.com",
+        databaseURL: "https://gestiondeclientes-67d4d.firebaseio.com",
+        projectId: "gestiondeclientes-67d4d",
+        storageBucket: "gestiondeclientes-67d4d.appspot.com",
+        messagingSenderId: "681936476485",
+        appId: "1:681936476485:web:ec051ead369edcde5e462c"
+        };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body class="animsition" data-animsition-in-class="fade-in-right" data-animsition-in-duration="500">
+    <div class="navbar-fixed margin_bottom_lg">
+      <nav class="nav-wrapper nav-color-red">
+        <div class="container">
+          <a href="#!" class="brand-logo left logo">Gestion de clientes</a>
+          <a href="#" data-target="menu" class="sidenav-trigger logo">
+            <i class="material-icons logo">menu</i>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="barraLateral">
+      <ul class="sidenav" id="menu">
+        <div class="myProfile">
+          <div class="myProfileIcon">
+            <i class="material-icons">account_circle</i>
+          </div>
+          <div class="myProfileContent">
+            <p>Hola, <span id="profileName"></span></p>
+          </div>
+        </div>
+        <input type="text" id="buscador" class="input-red" placeholder="search"/>
+        <a id="logout" class="btn btn-color-grey"><i class="material-icons left">forward</i>Cerrar sesion</a>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row width">
+        <div class="col s12 m12 l12">
+          <form id="formulario" class="center form_input_red">
+            <div class="campos left-align">
+              <div class="input-field">
+                <label for="nombres_apellidos">Nombres y apellidos</label>
+                <input type="text" id="nombres_apellidos" name="nombres_apellidos" autocomplete="off"/>
+              </div>
+              <div class="input-field">
+                <label for="cedula">CC</label>
+                <input type="number" id="cedula" name="cedula" autocomplete="off"/>
+              </div>
+              <div class="input-field">
+                <label for="telefono">telefono</label>
+                <input type="number" id="telefono" name="telefono" autocomplete="off"/>
+              </div>
+              <div class="input-field">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" autocomplete="off"/>
+              </div>
+              <div class="input-field">
+                <label for="valor">Valor</label>
+                <input type="number" id="valor" name="valor" autocomplete="off"/>
+              </div>
+              <div class="input-field">
+                <label for="interes">Interés</label>
+                <input type="number" id="interes" name="interes" autocomplete="off"/>
+              </div>
+              <div class="input-field">
+                <label for="numeroCuotas">N° de cuotas</label>
+                <input type="number" id="numeroCuotas" name="numeroCuotas" autocomplete="off"/>
+              </div>
+              <div class="input-field">
+                <label for="cuotas">Valor de cuotas</label>
+                <input type="number" id="cuotas" name="cuotas" autocomplete="off" readonly="readonly"/>
+              </div>
+              <div class="inputCustomContainer input-field">
+                <label for="saldo">Saldo</label>
+                <input type="number" id="saldo" name="saldo" autocomplete="off" readonly="readonly"/><a id="btn_saldo" class="btn btn-color-grey"><i class="material-icons">autorenew</i></a>
+              </div>
+            </div>
+            <div class="botones margin_top_sm center-align">
+              <a id="enviar" class="btn-responsive btn btn-color-grey"><i class="material-icons">add</i></a>
+              <a id="actualizar" class="btn-responsive btn btn-color-grey"><i class="material-icons">edit</i></a>
+              <button type="reset" class="btn-responsive btn btn-color-grey"><i class="material-icons">backspace</i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="js/network.js"></script>
+    <script src="js/app.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="animsition/js/jquery.min.js"></script>
+    <script src="animsition/js/animsition.min.js"></script>
+    <script src="animsition/js/animsition.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+$(".animsition").animsition({
+  loading: false,
+});

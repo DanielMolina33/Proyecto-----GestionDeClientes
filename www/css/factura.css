@@ -1,0 +1,100 @@
+.tabla{
+  width: 750px;
+}
+
+.tabla tbody table{
+  width: 100%;
+  border: none;
+}
+
+.contenedor_header tr .titulo, .date{
+  border: none;
+  height: 150px;
+}
+
+.contenedor_header .titulo{
+  text-align: center;
+}
+
+.contenedor_header .date{
+  width: 30%;
+}
+
+.contenedor_header .date table{
+  float: right;
+  width: 80%;
+}
+
+td, th, table{
+  height: 20px;
+  border: 1px solid black;
+}
+
+.contenedor_footer td{
+  border: none;
+  height: 150px;
+}
+
+.contenedor_footer hr{
+  width: 90%;
+  border: 0.5px solid #000;
+}
+
+.contenedor_body .value{
+  width: 25%;
+}
+
+.container_buttons{
+  display: flex;
+}
+
+.boton{
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background-color: #f44336;
+  box-shadow: 0 0 0 0;
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.back{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.back:visited{
+  color: #ffffff;
+}
+
+.icon{
+  font-family: 'Material icons';
+  font-size: 18px !important;
+  font-style: normal;
+  margin-right: 3px;
+}
+
+b{
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 750px){
+  .tabla{
+    width: 100%;
+  }
+}
+
+@media print{
+  .hide{
+    display: none;
+  }
+}

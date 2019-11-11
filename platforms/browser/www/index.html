@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.min.css">
+    <title>Iniciar Sesion</title>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+    <script src="js/loading.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBfU8XlPO4oTWF5PRLUEzxNLx2I8yrIVL0",
+        authDomain: "gestiondeclientes-67d4d.firebaseapp.com",
+        databaseURL: "https://gestiondeclientes-67d4d.firebaseio.com",
+        projectId: "gestiondeclientes-67d4d",
+        storageBucket: "gestiondeclientes-67d4d.appspot.com",
+        messagingSenderId: "681936476485",
+        appId: "1:681936476485:web:ec051ead369edcde5e462c"
+        };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <div class="vertical red lighten-1" id="cargando">
+      <div class="center">
+        <p class="font-size white-text">GestionDeClientes</p>
+        <div class="preloader-wrapper big active spinner-size">
+         <div class="spinner-layer spinner-color">
+           <div class="circle-clipper left">
+             <div class="circle"></div>
+           </div>
+           <div class="gap-patch">
+             <div class="circle"></div>
+           </div>
+           <div class="circle-clipper right">
+             <div class="circle"></div>
+           </div>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="hide" id="content">
+     <div class="container">
+       <div class="row width">
+         <div class="col s12 m12 l12">
+           <h4 class="center margin_bottom_lg">Iniciar sesion</h4>
+           <form class="center form_input_red">
+             <input type="email" id="email" autocomplete="off" placeholder="Email"/>
+             <input type="password" id="pass" class="margin_bottom_sm" placeholder="Contraseña"/>
+             <a id="entrar" class="btn margin_bottom_lg btn-color-red">Continuar</a>
+           </form>
+           <p>¿Olvidaste tu contaseña?<a id="reestablecer">Reestablecer</a></p>
+           <p>¿Aun no estas registrado?<a href="register.html" target="_self">Registrarme</a></p>
+           <p>¿Tienes algun problema?<a href="https://forms.gle/AQqGeKtVN5QCMZRKA">reportalo con nosotros</a></p>
+         </div>
+       </div>
+     </div>
+   </div>
+    <script src="cordova.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/network.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+  </body>
+</html>

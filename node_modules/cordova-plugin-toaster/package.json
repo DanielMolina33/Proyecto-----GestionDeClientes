@@ -1,0 +1,55 @@
+{
+  "_from": "cordova-plugin-toaster",
+  "_id": "cordova-plugin-toaster@0.0.2",
+  "_inBundle": false,
+  "_integrity": "sha1-+xOK8CE+1w+u+gKi/djNy6qCJdc=",
+  "_location": "/cordova-plugin-toaster",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-toaster",
+    "name": "cordova-plugin-toaster",
+    "escapedName": "cordova-plugin-toaster",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-toaster/-/cordova-plugin-toaster-0.0.2.tgz",
+  "_shasum": "fb138af0213ed70faefa02a2fdd8cdcbaa8225d7",
+  "_spec": "cordova-plugin-toaster",
+  "_where": "D:\\Programacion\\gestionDeClientes",
+  "author": {
+    "name": "Yaroslav Zaklinskyi"
+  },
+  "bugs": {
+    "url": "https://github.com/yaroslav0507/cordova-plugin-toaster/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-toaster",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Toaster Plugin",
+  "homepage": "https://github.com/yaroslav0507/cordova-plugin-toaster#readme",
+  "keywords": [
+    "cordova",
+    "toaster",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-toaster",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaroslav0507/cordova-plugin-toaster.git"
+  },
+  "version": "0.0.2"
+}

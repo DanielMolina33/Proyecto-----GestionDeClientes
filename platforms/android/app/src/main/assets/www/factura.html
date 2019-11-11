@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/factura.css">
+        <link rel="stylesheet" href="materialize/css/materialicons.css">
+        <title>Factura</title>
+    </head>
+    <body>
+      <table class="tabla">
+        <thead class="contenedor_header">
+          <tr>
+            <th colspan="2" class="titulo">CUENTA DE COBRO</th>
+            <td colspan="1" class="date">
+              <table border="1">
+                <tr>
+                  <th>AA</th>
+                  <th>MES</th>
+                  <th>DIA</th>
+                </tr>
+                <tr>
+                  <th class="fecha"></th>
+                  <th class="fecha"></th>
+                  <th class="fecha"></th>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </thead>
+
+        <tbody class="contenedor_body">
+          <tr>
+            <td colspan="3">Nombres y apellidos:<b class="personalDatesClient"></b></td>
+          </tr>
+          <tr>
+            <td colspan="1">CC:<b class="personalDatesClient"></b></td>
+            <td colspan="2">Telefono:<b class="personalDatesClient"></b></td>
+          </tr>
+          <tr>
+            <td colspan="3">Direccion:<b class="personalDatesClient"></b></td>
+          </tr>
+          <tr>
+            <th colspan="3">DEBE A</th>
+          </tr>
+          <tr>
+            <td colspan="3">Nombres y apellidos:<b class="personalDatesUser"></b></td>
+          </tr>
+          <tr>
+            <td colspan="1">CC:<b class="personalDatesUser"></b></td>
+            <td colspan="2">Telefono:<b class="personalDatesUser"></b></td>
+          </tr>
+          <tr>
+            <th colspan="3">LA SUMA DE</th>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <table>
+                <tr>
+                  <th colspan="1" class="value datosCobro"></th>
+                  <td colspan="2" align="left">En letras:</td>
+                </tr>
+                <tr>
+                  <td colspan="1" align="left">Con interes de: <b class="datosCobro"></b></td>
+                  <td colspan="2" align="left">A<b class="datosCobro"></b>cuotas de<b class="datosCobro"></b></td>
+                </tr>
+                <tr>
+                  <td colspan="3" align="left">Saldo: <b class="datosCobro"></b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="3">POR CONCEPTO DE</th>
+          </tr>
+          <tr>
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Con pagaderos los dias:</td>
+          </tr>
+          <tr>
+            <td colspan="3">La presente se firma en Santiago de Cali, a los ____ dias del mes de ___________ del año ______</td>
+          </tr>
+        </tbody>
+
+        <tfoot class="contenedor_footer">
+          <tr>
+            <td colspan="1" align="center">
+              <hr/>
+              Deudor
+            </td>
+            <td colspan="1" align="center">
+              <hr/>
+              Codeudor
+            </td>
+            <td colspan="1" align="center">
+              <hr/>
+              <span class="personalDatesUser"></span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="container_buttons">
+        <button class="hide boton"><a class="back" href="app.html"><i class="icon">arrow_back</i>Volver al formulario</a></button>
+        <button class="hide boton" id="print"><i class="icon">print</i>Imprimir</button>
+      </div>
+        <script src="cordova.js"></script>
+        <script src="js/print.js"></script>
+    </body>
+</html>

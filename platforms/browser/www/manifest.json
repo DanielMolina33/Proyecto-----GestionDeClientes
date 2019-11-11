@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "GestionDeClientes",
+  "short_name": "GestionDeClientes",
+  "version": "com.app.gestionDeClientes",
+  "description": "Una aplicación que te ayudará a gestionar de una manera efectiva, intuitiva y facil tus clientes",
+  "author": "Jose Daniel Molina",
+  "icons": [],
+  "start_url": "index.html"
+}
